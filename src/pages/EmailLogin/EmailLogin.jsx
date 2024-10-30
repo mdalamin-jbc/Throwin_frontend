@@ -42,10 +42,10 @@ const EmailLogin = () => {
 
   return (
     <div
-      className="flex flex-col justify-center items-center h-screen bg-cover bg-center p-4"
+      className="flex flex-col justify-center items-center h-screen bg-cover bg-center p-4 overflow-hidden"
       style={{ backgroundImage: `url(${socialBg})` }}
     >
-      <div className="absolute inset-0 bg-[#072233fb] "></div>
+      <div className="absolute inset-0 bg-[#072233fb] h-screen "></div>
 
       <div className="bg-white p-6 rounded-[10px] shadow-xl text-center relative w-[291px] h-[336px]">
         <img src={logo} alt="Logo" className="w-[150px] h-auto mx-auto mb-4" />
@@ -96,7 +96,7 @@ const EmailLogin = () => {
         </div>
       </div>
 
-      <button className="mt-24 relative" onClick={handleClose}>
+      <button className="mt-[88px] p-2 relative" onClick={handleClose}>
         <img
           src={closeIcon}
           alt="Close"
